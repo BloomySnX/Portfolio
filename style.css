@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 30px 0;
+    background-color: #00A6FB;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo {
+    border-style: groove;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #06A77D;
+}
+
+
+/* menu btn */
+
+.menu-btn {
+    color: blue;
+}
+
+
+/* home section*/
+
+.home {
+    display: flex;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 20%;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+body {
+    /* background-color: #5C6170; */
+    background-image: linear-gradient(#5C6170 0%, #FFC247 150%);
+}
+
+img {
+    border-style: solid;
+    border-width: 4px;
+}
+
+
+/* About */
+
+section {
+    padding: 100px 0;
+}
+
+.about {}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.about .title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 3px;
+    background: black;
+    transform: translateX(-30%);
+}
+
+.about .title::after {
+    content: "Kim jestem?";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: cornflowerblue;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.column .text {
+    font-size: 20px;
+    padding: 20px;
+    width: -200px;
+    float: right;
+    clear: both;
+}
+
+.column .photo {}
+
+
+/* skill */
+
+.skills .title::after {
+    content: "( ͡ಥ ͜ʖ ͡ಥ)";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 10px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 66%;
+}
+
+.skills-content .right .css::before {
+    width: 66%;
+}
+
+.skills-content .right .js::before {
+    width: 33%;
+}
+
+.skills-content .right .php::before {
+    width: 33%;
+}
+
+.skills-content .right .mysql::before {
+    width: 33%;
+}
+
+.skills-content .right .Csharp::before {
+    width: 33%;
+}
+
+.skills .skills-content .column,
+.contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.about .about-content .right .text,
+.skills .skills-content .left .text {
+    font-size: 19px;
+}
+
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Skills level */
+
+.skills-content .right .skillsLevel .Basic::before {
+    width: 33%;
+    background: #3F88C5;
+}
+
+.skills-content .right .skillsLevel .Intermediate::before {
+    width: 66%;
+    background: #04395E;
+}
+
+.skills-content .right .skillsLevel .Advanced::before {
+    width: 100%;
+    background: #031D44;
+}
+
+
+/* contact */
+
+.contact {
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact .title::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 3px;
+    background: black;
+    transform: translateX(-40%);
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    display: bottom;
+    background-color: #25272D;
+    color: #f0f0f0;
+    padding: 4px
+}
+
+
+/* responsive */
+
+@media(max-width:900px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3 ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .about .about-content .column {
+        width: 40%;
+    }
+    .skills .skills-content .column {
+        width: calc(50% - 30px);
+    }
+}
