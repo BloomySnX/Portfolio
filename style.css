@@ -5,6 +5,10 @@
             text-decoration: none;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         .navbar {
             position: fixed;
             width: 100%;
@@ -142,7 +146,7 @@
         .about .title::before {
             content: "";
             position: absolute;
-            width: 280px;
+            width: 300px;
             height: 3px;
             background: black;
             transform: translateX(-30%);
@@ -156,7 +160,7 @@
             font-size: 20px;
             color: cornflowerblue;
             padding: 5px;
-            background: black;
+            background: #25272D;
             transform: translateX(-50%);
         }
         
@@ -268,11 +272,15 @@
         }
         /* skill */
         
-        .skills .title::after {
-            content: "( ͡ಥ ͜ʖ ͡ಥ)";
+        .skills .title::before {
+            transform: translateX(-10%);
         }
         
-        .skills .skills-content .column {
+        .skills .title::after {
+            content: "Technologie";
+        }
+        
+        y .skills .skills-content .column {
             width: calc(50% - 30px);
         }
         
@@ -455,6 +463,37 @@
             width: 100%;
             background: #031D44;
         }
+        /* &skill */
+        /* sociall */
+        
+        .social .title::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 3px;
+            background: black;
+            transform: translateX(-30%);
+        }
+        
+        .social .title::after {
+            content: "Kim jestem?";
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            font-size: 20px;
+            color: cornflowerblue;
+            padding: 5px;
+            background: #25272D;
+            transform: translateX(-50%);
+        }
+        
+        .social .sociallogo {
+            display: flex;
+            padding: 10%;
+            justify-content: space-evenly;
+            text-decoration: none;
+        }
+        /* &sociall */
         /* contact */
         
         .contact {
