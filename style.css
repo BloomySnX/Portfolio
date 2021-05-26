@@ -466,30 +466,26 @@
         /* &skill */
         /* sociall */
         
+        .social .title {
+            position: relative;
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+        }
+        
         .social .title::before {
             content: "";
             position: absolute;
-            width: 300px;
+            width: 280px;
             height: 3px;
             background: black;
-            transform: translateX(-30%);
-        }
-        
-        .social .title::after {
-            content: "Kim jestem?";
-            position: absolute;
-            bottom: -12px;
-            left: 50%;
-            font-size: 20px;
-            color: cornflowerblue;
-            padding: 5px;
-            background: #25272D;
-            transform: translateX(-50%);
+            transform: translateX(-40%);
         }
         
         .social .sociallogo {
             display: flex;
-            padding: 10%;
             justify-content: space-evenly;
             text-decoration: none;
         }
