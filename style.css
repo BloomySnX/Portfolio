@@ -572,6 +572,17 @@
         .contact .content .column .form button {
             color: aqua;
         }
+        
+        .contact .content .column .button-area button {
+            height: 47;
+            width: 170px;
+            border: 2px solid #5C6170;
+            background-color: #5C6170;
+            color: #fffff0;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 6px;
+        }
         /* footer */
         
         footer {
