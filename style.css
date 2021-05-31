@@ -75,6 +75,7 @@ html {
 /* menu btn */
 
 .menu-btn {
+    margin-left: 10%;
     color: blue;
 }
 
@@ -121,6 +122,7 @@ body {
 img {
     border-style: solid;
     border-width: 4px;
+    border-color: #6987C9;
 }
 
 
@@ -202,7 +204,7 @@ section {
 
 /* about photo */
 
-.column .photo-zoom {
+.photo-zoom {
     cursor: crosshair;
 }
 
@@ -443,23 +445,9 @@ y .skills .skills-content .column {
 
 /* &skill animation */
 
-.skills .skills-content .column,
-.contact .contact-content .column {
-    width: 100%;
-    margin-bottom: 35px;
-}
-
 .about .about-content .right .text,
 .skills .skills-content .left .text {
     font-size: 19px;
-}
-
-.skills .skills-content,
-.contact .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -530,83 +518,13 @@ y .skills .skills-content .column {
     transform: translateX(-40%);
 }
 
-.contact .contact-content .column {
-    width: calc(50% - 30px);
+.contact .content input {
+    width: 80%;
+    max-width: 500px;
+    height: 40%;
 }
 
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.contact .contact-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-
-.contact .right form .fields {
-    display: flex;
-}
-
-.contact .right form .field,
-.contact .right form .fields .field {
-    height: 50px;
-    width: 100%;
-}
-
-.contact .right form .textarea {
-    height: 80px;
-    width: 100%;
-}
-
-.contact .right form .name {
-    margin-right: 10px;
-}
-
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 50%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-    border-color: #b3b3b3;
-}
-
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-
-.contact .content .column .form .button-area {
-    display: flex;
-    align-items: center;
-}
-
-.contact .content .column .form button {
-    color: aqua;
-}
-
-.contact .content .column .button-area button {
-    height: 47;
-    width: 170px;
-    border: 2px solid #5C6170;
-    background-color: #5C6170;
-    color: #fffff0;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-}
+.contact .content input {}
 
 
 /* footer */
