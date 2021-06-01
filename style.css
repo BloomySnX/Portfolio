@@ -523,6 +523,13 @@ y .skills .skills-content .column {
     height: 200px;
 }
 
+.contact .content a {
+    text-decoration: none;
+    color: #252627;
+    border-radius: 10px;
+    border-bottom-style: solid;
+}
+
 
 /* footer */
 
