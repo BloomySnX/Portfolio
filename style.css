@@ -60,7 +60,7 @@ html {
 }
 
 .navbar .menu li a {
-    color: white;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -76,7 +76,7 @@ html {
 
 .menu-btn {
     margin-left: 10%;
-    color: blue;
+    color: #fff;
 }
 
 
@@ -85,7 +85,7 @@ html {
 .home {
     display: flex;
     min-height: 500px;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .home .max-width {
@@ -107,13 +107,6 @@ html {
     margin: 5px 0;
 }
 
-.home .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 body {
     /* background-color: #5C6170; */
     background-image: linear-gradient(#5C6170 0%, #3FA7D6 100%);
@@ -121,7 +114,7 @@ body {
 
 img {
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
     border-color: #6987C9;
 }
 
@@ -131,8 +124,6 @@ img {
 section {
     padding: 100px 0;
 }
-
-.about {}
 
 .about .about-content {
     display: flex;
@@ -385,6 +376,8 @@ y .skills .skills-content .column {
     animation: CS 3s normal forwards;
 }
 
+.bars>span {}
+
 
 /* skill animation */
 
@@ -541,6 +534,26 @@ footer {
 
 /* responsive */
 
+@media(max-width:950px) {
+    .home .home-content .text-1 {
+        font-size: 33px;
+    }
+    .home .home-content .text-2 {
+        font-size: 33px;
+    }
+    .home .home-content .text-3 {
+        font-size: 24px;
+    }
+    .img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .about .about-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media(max-width:900px) {
     .menu-btn {
         display: block;
@@ -574,11 +587,131 @@ footer {
         margin: 20px 0;
         font-size: 25px;
     }
+    .navbar .logo a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .home .home-content .text-1 {
+        font-size: 30px;
+    }
+    .home .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+    img {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home .container {
+        margin-bottom: -15%;
+    }
     .home .home-content .text-2 {
         font-size: 70px;
     }
     .home .home-content .text-3 {
         font-size: 35px;
+    }
+    .about .about-content .column {
+        width: 40%;
+    }
+    .skills .skills-content .column {
+        width: calc(50% - 30px);
+    }
+    .about .aboutTitle {
+        font-size: 20px;
+    }
+    .about .aboutContent {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:850px) {
+    .home .home-content .text-1 {
+        font-size: 30px;
+    }
+    .home .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+    img {
+        width: 100%;
+        max-width: 250px;
+        margin-left: -5%;
+        margin-right: auto;
+    }
+    .about .aboutTitle {
+        font-size: 15px;
+    }
+    .about .aboutContent {
+        font-size: 15px;
+    }
+    .navbar .logo a {
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
+@media(max-width:500px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3 ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .navbar .logo a {
+        color: #fff;
+        font-size: 15px;
+    }
+    .home .container {
+        margin-top: 15%;
+    }
+    .about .photo {
+        width: 100%;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home .home-content .text-3 {
+        font-size: 25px;
     }
     .about .about-content .column {
         width: 40%;
