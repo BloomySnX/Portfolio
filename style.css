@@ -512,12 +512,16 @@ y .skills .skills-content .column {
 }
 
 .contact .content input {
-    width: 80%;
-    max-width: 500px;
+    width: 300px;
+    max-width: 600px;
     height: 40%;
+    font-size: 20px;
 }
 
-.contact .content input {}
+.contact .content textarea {
+    width: 800px;
+    height: 200px;
+}
 
 
 /* footer */
